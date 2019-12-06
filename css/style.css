@@ -2,12 +2,32 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+.container-wrapper {}
+
+.container-wrapper--green {
+    background-color: #a82828;
+    ;
+    color: white;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #ecbe2d;
+    border-color: #ecbe2d;
+}
+
+/*..............................Callout..............................*/
 
 .callout-container {
     height: 100vh;
- 
-     background: url("../images/whiskey-background-image.jpg") no-repeat bottom right fixed; 
+    background: url("../images/whiskey-background-image.jpg") no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,7 +38,7 @@ body {
     justify-content: center;
 
     position: relative;
-    }
+}
 
 .opaque-overlay {
     position: absolute;
@@ -33,6 +53,18 @@ body {
 
 .features-containter {}
 
+/*..............................Page headers..............................*/
+
+.page-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
 /*..............................Block dividers..............................*/
 
 .block-divider {
@@ -42,22 +74,34 @@ body {
 }
 
 .block-divider--orange {
-    background-color: #26a745;
+    background-color: #a82828;
 }
 
-.block-divider-short {
+.block-divider--short {
     width: 35px;
+    background-color: gray;
 }
 
-/*..............................Jumbotron..............................*/
+.block-divider--white {
+    background-color: white;
+}
+
+/*..............................Content containers..............................*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/*..............................Navbar..............................*/
 
 .navalert-container {
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 0;
-    scroll-padding-right: 0;
     z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar {
@@ -67,6 +111,25 @@ body {
     background-color: rgba(0, 0, 0, 0.25);
 }
 
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: initial;
+}
+
+.navbar .dropdown-item {
+    color: white;
+}
 /*..............................Jumbotron..............................*/
 
 .jumbotron {
@@ -100,13 +163,18 @@ body {
 
 .btn--green {
     color: white;
-    background-color: #26a745;
+    background-color: #a82828;
 }
 
 .btn--green:hover,
 .btn--green:active,
 .btn--green:focus,
 .btn--green:active:focus {
-    background-color: #0e852a ;
-    border-color: #0e852a;
+    background-color: #ec2a2a ;
+    border-color: #ec2a2a;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
 }
